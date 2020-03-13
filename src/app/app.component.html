@@ -1,4 +1,18 @@
-<hello name="{{ name }}"></hello>
-<p>
-  Start editing to see some magic happen :)
-</p>
+<div fxLayout=”column” layout-align="space-between">
+	<div flex="20">
+		<app-top></app-top>
+	</div>
+	<div layout=”row” flex="60">
+		<div layout=”column”>
+			<div flex="33">
+				<app-left></app-left>
+			</div>
+			<div flex="67">
+				<app-right></app-right>
+			</div>
+		</div>
+	</div>
+	<div flex="20">
+		<app-bottom></app-bottom>
+	</div>
+</div>
